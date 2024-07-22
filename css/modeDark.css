@@ -1,0 +1,81 @@
+@import url(main.css);
+
+:root{
+    /*DARK MODE COLORS*/
+    --bg-color: #141D2F;
+    --btnBg-color: #0079FF;
+    --white: #FFFFFF;
+    --bgCard-color: #1E2A47;
+}
+
+body.modeDark{
+    background-color: var(--bg-color) !important;
+
+    .targetUser, .stylesGeneralProfileUbication{
+        color: var(--white);
+    }
+
+    .iconInfoProfile{fill: var(--white);}
+
+    .bx-header-profile{
+        .infoProfile{
+            .nameProfile{
+                color: var(--white);
+            }
+            .data-exp{font-size: 15px; color: var(--white);}
+        }
+    }
+
+    .contentHedaerSection{
+        .logo{color: var(--white);}
+
+        .bx--interactiveLight{
+            .nameLight{color: var(--white);}
+
+            &:hover{
+                .nameLight{color: #90A4D4;}
+                .iconWhite{fill: #90A4D4;}
+            }
+        }
+    }
+
+    .bx--searchUsuary-GitHub{
+        background-color: var(--bgCard-color) !important; 
+        filter: drop-shadow(0px 0px 0px transparent) !important;
+
+        .bx-search{
+            #searchUsuary{
+                color: var(--white);
+
+                &::placeholder{color: var(--white);}
+            }
+        }
+
+        .btnSubmit{
+            &:hover{
+                background-color: #60ABFF !important;
+            }
+        }
+
+    }
+
+    .contentInformationProfile{
+        background-color: var(--bgCard-color) !important; 
+        filter: drop-shadow(0px 0px 0px transparent) !important;
+        color: var(--white);
+
+        .bx-informationProfile{
+            .bioProfile{color: var(--white);}
+        }
+
+        .contentPageUsuary{
+            background-color: var(--bg-color) !important;
+            
+            .bx-contentPage{
+                .stylesForTitleGeneral{color: var(--white) !important;}
+                .stylesForTxtContent{color: var(--white) !important;}
+
+            }
+        }
+    }
+}

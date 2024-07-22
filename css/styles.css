@@ -1,0 +1,238 @@
+@import url(main.css);
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: all .3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor);
+
+    .content__all{
+        width: 730px;
+        height: fit-content;
+        
+        .contentHedaerSection{
+            height: 38px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .logo{
+                font-size: var(--txtPreset1);
+                font-weight: bold;
+            }
+
+            .bx--interactiveLight{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .nameLight{
+                    height: 20px;
+                    gap: 1rem;
+                    font-size: var(--txtPreset4);
+                    font-weight: bold;
+                    color: var(--bgColor-section);
+                    text-transform: uppercase;
+                    letter-spacing: 2.5px;
+                    transition: .3s ease;
+                }
+
+                .iconDark{
+                    .colorDark{
+                        transition: .3s ease;
+                        fill: var(--bgColor-section);
+                    }
+                }
+
+                &:hover{
+                    .nameLight{
+                        color: var(--colorTitleNumber);
+                    }
+
+                    .iconDark{
+                        .colorDark{
+                            fill: var(--colorTitleNumber);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .bx--searchUsuary-GitHub{
+            width: 100%;
+            height: 69px;
+            background-color: var(--bgColorCard);
+            border-radius: var(--borderR);
+            margin-top: 36px;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            filter: drop-shadow(0px 16px 10px hsl(217, 35%, 45%, 19.86%));
+            margin-bottom: 24px;
+            transition: all .3s;
+
+            .bx-search{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                margin-left: 2rem;
+
+
+                #searchUsuary{
+                    width: 354px;
+                    height: 25px;
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    background-color: transparent;
+
+                    &::-webkit-search-cancel-button{display: none;}
+                }
+            }
+            .content--btn-search{
+                width: fit-content;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                .ErrorResult{
+                    display: none;
+                    color: #F74646;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+                .btnSubmit{
+                    width: 106px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    outline: none;
+                    background-color: var(--bgColor-btn);
+                    border-radius: var(--borderBTNSearch);
+                    color: var(--bgColorCard);
+                    cursor: pointer;
+                    font-size: var(--txtPreset3);
+                    font-weight: bold;
+                    margin-right: .5rem;
+                    transition: .3s ease;
+    
+                    &:hover{
+                        background-color: hsl(212, 100%, 50%, 60%);
+                    }
+                }
+            }
+            
+        }
+
+        .contentInformationProfile{
+            width: 100%;
+            height: fit-content;
+            background-color: var(--bgColorCard);
+            border-radius: var(--borderR);
+            filter: drop-shadow(0px 16px 10px hsl(217, 35%, 45%, 19.86%));
+            display: flex;
+            gap: 2rem;
+            padding: 44px 48px;
+            transition: all .3s;
+
+            .content--img{
+                width: 117px;
+                height: 117px;
+                border-radius: 50%;
+                object-fit: cover;
+                overflow: hidden;
+                
+
+                .imgProfile{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .bx-informationProfile{
+                width: 100%;
+
+                .bioProfile{
+                    width: 100%;
+                    font-size: 15px;
+                    color: var(--colorTxt);
+                }
+
+                .contentPageUsuary{
+                    margin-top: 32px;
+                    background-color: var(--bgColor);
+                    border-radius: var(--borderBTNSearch);
+                    padding: 15px 32px;
+                    margin-bottom: 37px;
+
+                    display: flex;
+                    justify-content: space-between;
+                    transition: .3s ease;
+                    
+                    .bx-contentPage{
+                        display: flex;
+                        flex-direction: column;
+
+                        .stylesForTitleGeneral{
+                            font-size: var(--txtPreset4);
+                            color: var(--colorTxt);
+                        }
+
+                        .stylesForTxtContent{
+                            color: var(--colorTitleNumber);
+                            font-size: var(--txtPreset2);
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .bx--info-contact--andOther{
+                    width: 100%;
+                    display: grid;
+                    gap: 19px;
+                    grid-template-areas: "column-1 column-2";
+
+
+                    .iconsInfoProfile{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        
+                        .stylesGeneralProfileUbication{font-size: 15px; cursor: pointer;}
+                    }
+                }
+            }
+
+
+            .contentHeaderCard{
+                gap: 41px;
+                margin-bottom: 24px;
+                .bx-header-profile{
+                    display: none;
+                    width: fit-content;
+                    .infoProfile{
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 2px;
+                        margin-bottom: 4px;
+                    }
+
+                    .data-exp{font-size: 15px; color: var(--bgColor-section);}
+                }
+            }
+        }
+    }
+}

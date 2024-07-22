@@ -1,0 +1,37 @@
+@media screen and (max-width: 769px){
+    body{
+        .content__all{
+            width: 573px;
+            margin: 2rem;
+
+            .bx--searchUsuary-GitHub {
+                .bx-search {
+                    margin-left: 2rem;
+
+                    #searchUsuary {
+                        width: 275px;
+                        font-size: 18px;
+                    }
+                }
+
+                .content--btn-search {
+                    .btnSubmit {
+                        width: 106px;
+                        height: 50px;
+                    }
+                }
+            }
+            .bx-informationProfile{.bx-header-profile{display: none;}}
+
+            .contentInformationProfile{
+                display: block;
+                .contentHeaderCard{
+                    display: flex;
+                    .bx-header-profile{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

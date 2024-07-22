@@ -1,0 +1,79 @@
+@import url(styles.css);
+@import url(layout/media768.css);
+@import url(layout/media375.css);
+@import url(modeDark.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    /*LIGHT MODE COLORS*/
+    --bgColor-btn: #0079FF;
+    --bgColor-section: #697C9A;
+    --colorTxt: #4B6A9B;
+    --colorTitleNumber: #2B3442;
+    --bgColor: #F6F8FF;
+    --bgColorCard: #FEFEFE;
+
+    /*Typography*/
+    --txtPreset1: 26px; 
+    --txtPreset2: 22px; 
+    --txtPreset3: 16px; 
+    --txtPreset4: 13px; 
+    --bodyTXT: 16px;
+    --spaceLine: 25px;
+    --fontF: "Space Mono", monospace;
+    --borderR: 15px;
+    --borderBTNSearch: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontF);
+    box-sizing: border-box;
+}
+
+.opacity-50{
+    opacity: .5;
+}
+
+.stylesGeneralProfileUbication{
+    overflow: hidden;
+    overflow-x: auto;
+    width: 170px;
+    
+    &::-webkit-scrollbar{display: none;}
+}
+
+.targetUser, .stylesGeneralProfileUbication{
+    color: var(--colorTxt);
+    text-decoration: none;
+}
+
+.bx-header-profile{
+    width: 100%;
+    margin-bottom: 20px;
+
+    .infoProfile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2px;
+
+        .nameProfile{
+            font-size: var(--txtPreset1);
+            color: var(--colorTitleNumber);
+        }
+        .data-exp{font-size: 15px; color: var(--bgColor-section);}
+    }
+
+    .userName{
+        color: var(--bgColor-btn);
+        font-size: var(--txtPreset3);
+    }
+}
+
+.textDecoration{cursor: pointer; &:hover{text-decoration: underline;}}
+
+.iconWhite{display: none; fill: white; transition: .3s ease;}
+
+.iconInfoProfile{fill: var(--colorTxt);}
